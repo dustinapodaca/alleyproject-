@@ -21,7 +21,7 @@ The build uses a relative base and hash routing, so `dist/` can be hosted from a
 ## The plan document
 
 - `docs/Derelict-Mill-Alley-Plan.docx` and `docs/Derelict-Mill-Alley-Plan.pdf` — the full written plan (scale breakdown, kit, asset list, materials, free resources, daily schedule).
-- `docs/Derelict-Mill-Alley-Tracker.xlsx` — spreadsheet tracker: every asset with a colored status per stage, plus the 15-week schedule (hover a task for its full description).
+- `docs/Derelict-Mill-Alley-Tracker.xlsx` — spreadsheet tracker: every asset with its size and a colored status per stage, the 15-week schedule (hover a task for its full description), and a Measurements sheet with the 1:1 scale table.
 - `scripts/plan.md` — the same plan as Markdown; the app's data is generated from it.
 
 ## Editing the plan
