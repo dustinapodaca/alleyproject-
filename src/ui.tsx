@@ -54,3 +54,9 @@ export function Priority({ p }: { p?: string }) {
   if (!p) return null
   return <span className={`prio prio-${p.toLowerCase()}`}>{p}</span>
 }
+
+/** Small colour square matching the paint-over ID map. Renders nothing when there's no colour. */
+export function IdSwatch({ color }: { color?: string }) {
+  if (!color) return null
+  return <span className="swatch" style={{ background: color }} title={`ID map colour ${color}`} aria-hidden="true" />
+}

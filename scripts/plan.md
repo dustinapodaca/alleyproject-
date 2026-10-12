@@ -80,6 +80,12 @@ The alley is about 5 m wall to wall and 20 m tall, framed by two mill buildings 
 - Texel density 10.24 px/cm (1024 px/m) for surfaces within 5 m of camera; 5.12 px/cm for upper floors and background.
 - Brick tiling texture covers 200 x 200 cm with 24 courses (8.33 cm each, a small cheat on the real 8.6) so coursing lines up at every 100 cm module edge.
 
+**Modular paint-over**
+
+![Modular paint-over](../docs/mill-alley-paintover.png){width=6.5in}
+
+Left: the perspective module grid (400 cm modules on the left wall, 300 × 380 cm bays on the right), hero outlines H1 to H7 and a 180 cm figure for scale. Right: the ID map, one colour per kit piece. The same colours are the swatches in column H of the tracker spreadsheet; pieces not visible in the photo (A06, A08, B08, B09, C03, C04, C06, D02, D03, D05 to D07) have colours reserved for later ID maps.
+
 ## Modular kit
 
 The kit is 31 pieces in four families that build both facades, the ground and the structural details. Every piece snaps on a 25 cm grid, uses tiling materials or one of three trim sheets, and takes vertex paint for moss, grime and wet.

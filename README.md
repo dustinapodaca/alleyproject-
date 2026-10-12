@@ -22,6 +22,7 @@ The build uses a relative base and hash routing, so `dist/` can be hosted from a
 
 - `docs/Derelict-Mill-Alley-Plan.docx` and `docs/Derelict-Mill-Alley-Plan.pdf` — the full written plan (scale breakdown, kit, asset list, materials, free resources, daily schedule).
 - `docs/Derelict-Mill-Alley-Tracker.xlsx` — spreadsheet tracker: every asset with its size and a colored status per stage, the 15-week schedule (hover a task for its full description), and a Measurements sheet with the 1:1 scale table.
+- `docs/mill-alley-paintover.png` — modular paint-over: perspective module grid with hero outlines, and a colour ID map of the kit. Drawn by `scripts/idmap.py`, which also holds the ID colours used in the app (`src/data/colors.ts`) and the spreadsheet (column H, built by `scripts/build_xlsx.py`).
 - `scripts/plan.md` — the same plan as Markdown; the app's data is generated from it.
 
 ## Editing the plan

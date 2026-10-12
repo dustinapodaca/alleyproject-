@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import { assetKitHeroes, decals, foliage, heroes, kitA, kitB, kitC, kitD, materials, measurements, props, type Row } from '../data/plan'
 import { freeResources, kitRules, maskRecipes, masterMaterials, metrics, postText, project, renderList, trimSheets, zones } from '../data/guide'
 import type { Status, StoreApi } from '../lib'
-import { Check, PageHead, Priority, Progress, StatusChip } from '../ui'
+import { idColors } from '../data/colors'
+import { Check, IdSwatch, PageHead, Priority, Progress, StatusChip } from '../ui'
 
 function DataTable({ rows, cols, status }: { rows: Row[]; cols: string[]; status?: { api: StoreApi; key: (r: Row) => string } }) {
   return (
@@ -21,6 +22,7 @@ function DataTable({ rows, cols, status }: { rows: Row[]; cols: string[]; status
             <tr key={i}>
               {cols.map((c, j) => (
                 <td key={c} className={j === 0 ? 'mono' : ''}>
+                  {j === 0 && <IdSwatch color={idColors[r[c]]} />}
                   {r[c] || <span className="muted">—</span>}
                 </td>
               ))}
@@ -92,6 +94,17 @@ export function ReferenceView() {
       <figure className="ref">
         <img src={`${import.meta.env.BASE_URL}reference.jpg`} alt="Reference photo: a narrow derelict mill alley with brick walls, a timber skybridge and an overgrown far end" />
       </figure>
+      <section>
+        <h2>Modular paint-over</h2>
+        <p className="muted small" style={{ marginBottom: 12 }}>
+          Left: perspective module grid, hero outlines H1–H7 and a 180 cm scale figure. Right: ID map with one colour per kit piece — the same swatches shown next to each ID on the Kit, Heroes and Asset pages and in the tracker spreadsheet.
+        </p>
+        <figure className="ref ref-wide">
+          <a href={`${import.meta.env.BASE_URL}paintover.png`} target="_blank" rel="noreferrer">
+            <img src={`${import.meta.env.BASE_URL}paintover.png`} alt="Paint-over: module grid with hero outlines, and a colour ID map of the kit pieces" />
+          </a>
+        </figure>
+      </section>
       <section className="card">
         <h2>Scene zones, front to back</h2>
         <ol className="zones">
@@ -179,7 +192,10 @@ export function HeroesView({ api }: { api: StoreApi }) {
           return (
             <article className={`card hero ${h['#'] === 'H1' ? 'is-star' : ''}`} key={id}>
               <div className="hero-top">
-                <span className="mono accent">{h['#']}</span>
+                <span className="mono accent">
+                  <IdSwatch color={idColors[h['#']]} />
+                  {h['#']}
+                </span>
                 <StatusChip status={(api.store.status[id] ?? 0) as Status} onClick={() => api.cycleStatus(id)} />
               </div>
               <h3>{h.Feature}</h3>
@@ -252,7 +268,10 @@ export function AssetsView({ api }: { api: StoreApi }) {
           <tbody>
             {shown.map((i) => (
               <tr key={i.id}>
-                <td className="mono">{i.id}</td>
+                <td className="mono">
+                  <IdSwatch color={idColors[i.id]} />
+                  {i.id}
+                </td>
                 <td>
                   {i.name}
                   <div className="muted small">{i.cat}</div>
