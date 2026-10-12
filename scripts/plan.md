@@ -1,6 +1,6 @@
 # Derelict Mill Alley — 15-Week Environment Art Plan
 
-Prepared Oct 12, 2026 · Dustin Apodaca
+Updated Oct 12, 2026 · Dustin Apodaca
 
 ## Overview
 
@@ -399,6 +399,24 @@ The kit is done by Sun Nov 22, so everything after it builds on locked metrics; 
 - [ ] **Fri Jan 29** · Marmoset turntables for H1, H2, H6 and a prop sheet; render the flythrough sequence. *Done when:* all renders on disk.
 - [ ] **Sat Jan 30** · Edit the 30 to 45 second flythrough in Blender's Video Sequencer; make the reference vs final side-by-side. *Done when:* video exported.
 - [ ] **Sun Jan 31** · Lay out and publish the ArtStation post with breakdown text; update portfolio. *Done when:* project is live.
+
+## Free resources
+
+Free CC0 libraries cover the base materials and fill props, so your own time goes into the kit, the heroes and the custom masks. Credit anything you didn't make in the final post.
+
+| Resource | Use it for | Cost and license |
+| --- | --- | --- |
+| [ambientCG](https://ambientcg.com) | Base PBR materials: brick, concrete, metal, ground | Free, CC0 |
+| [Poly Haven](https://polyhaven.com) | Base materials, overcast HDRIs, some props | Assets free, CC0; its Blender add-on is paid, so download from the site |
+| [Blendkit](https://www.blenderkit.com) (formerly BlenderKit) | Materials and fill props from inside Blender | 60,000+ free assets, royalty-free or CC0; paid tier for the full library |
+| [Fab](https://www.fab.com) | Megascans and environment packs for UE5 | Some assets free, most paid since 2025; Megascans claimed before 2025 stay yours |
+| [Texel Density Checker](https://extensions.blender.org/add-ons/texel-density-checker) | Hitting 10.24 px/cm on every module | Free extension, Blender 4.2+ |
+| [Cell Fracture](https://extensions.blender.org/add-ons/cell-fracture/) | Broken bricks, rubble, smashed boards | Free extension, Blender 4.2+ |
+| [Ivy Gen](https://extensions.blender.org/add-ons/ivygen/) | Ivy cascading from the parapet (H4) | Free extension |
+| Node Wrangler | Fast material and mask node setups | Free, ships with Blender |
+| [Send to Unreal](https://github.com/epicgames/blendertools) | One-click Blender to UE5 export | Free; check it supports your Blender version, plain FBX export works too |
+
+Sources: [Poly Haven add-on](https://polyhaven.com/plugins/blender), [Megascans on Fab](https://forums.unrealengine.com/t/access-legacy-megascans-on-bridge-and-quixel-com/2142664), [Blendkit free assets](https://www.cgchannel.com/2026/08/get-60000-free-3d-assets-for-maya-godot-and-rhino-from-blendkit/), [free texture libraries](https://app.cinevva.com/guides/free-textures-hdris-materials).
 
 ## Final renders and presentation
 

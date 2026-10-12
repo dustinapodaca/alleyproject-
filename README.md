@@ -18,6 +18,11 @@ npm run build    # production build in dist/
 
 The build uses a relative base and hash routing, so `dist/` can be hosted from any static host or subpath (GitHub Pages, Netlify, an S3 bucket).
 
+## The plan document
+
+- `docs/Derelict-Mill-Alley-Plan.docx` and `docs/Derelict-Mill-Alley-Plan.pdf` — the full written plan (scale breakdown, kit, asset list, materials, free resources, daily schedule).
+- `scripts/plan.md` — the same plan as Markdown; the app's data is generated from it.
+
 ## Editing the plan
 
 All schedule and table content lives in `src/data/`:
