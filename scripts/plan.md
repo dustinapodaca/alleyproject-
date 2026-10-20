@@ -433,14 +433,20 @@ The ArtStation post leads with the reference-matched beauty shot, then proves th
 1. Hero beauty shot: Camera 1, matched to the photo, 4K.
 2. Reference vs final side-by-side.
 3. Four to six alternate angles: reverse shot from the far opening, low angle up at the skybridge, light well close-up, ivy and drainpipe detail, a top-down overview.
-4. Modular kit sheet: every A to D piece laid out with IDs, plus a few walls assembled two different ways from the same pieces.
-5. Kit assembly GIF: the right facade building up module by module.
-6. Trim sheet and tiling material sheet: flat textures plus material spheres.
-7. Hero turntables: skybridge, chimney cap, loading doors (Marmoset).
-8. Wireframe and clay overlays of Camera 1.
-9. Vertex paint and decal breakdown: same wall, with and without.
-10. Lighting-only pass.
-11. Flythrough video, 30 to 45 seconds.
+4. Value (greyscale) shot of Camera 1.
+5. Alternative lighting mood: Camera 1 at dusk or night.
+6. Modular kit sheet: every A to D piece laid out with IDs, module dimensions and a 180 cm scale figure, plus a few walls assembled two different ways from the same pieces.
+7. Kit assembly GIF: the right facade building up module by module.
+8. Trim sheet and tiling material sheet: flat textures plus material spheres.
+9. Trim vs unique texture overlay: one facade coloured by texture type.
+10. Hero turntables: skybridge, chimney cap, loading doors (Marmoset).
+11. Wireframe and clay overlays of Camera 1, plus a prop sheet wireframe with triangle counts.
+12. RGB-mask variation: one reusable prop shown in three variants from one mask.
+13. Foliage breakdown: leaf atlas, cards and the assembled ivy and buddleia.
+14. Vertex paint and decal breakdown: same wall, with and without.
+15. Lighting-only pass.
+16. Process: reference board, composition reference and dated progress shots from each review.
+17. Flythrough video, 30 to 45 seconds.
 
 **Post text to write**
 

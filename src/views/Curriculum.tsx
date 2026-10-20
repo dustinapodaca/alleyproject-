@@ -164,7 +164,7 @@ export function CurriculumView({ api }: { api: StoreApi }) {
           <section>
             <h2>Gaps in the Mill Alley render list</h2>
             <p className="muted small" style={{ marginBottom: 10 }}>
-              Standards the benchmark shows that the Mill Alley plan doesn’t yet. The curriculum’s drills produce each one.
+              Standards the benchmark showed that the Mill Alley plan was missing. All eight were added to its final render list on Oct 19; the curriculum’s drills produce each one.
             </p>
             <div className="table-wrap">
               <table>
