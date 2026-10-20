@@ -3,12 +3,14 @@ import { productionDays, useStore, type Store, type StoreApi } from './lib'
 import { project } from './data/guide'
 import { Progress } from './ui'
 import { ScheduleView, TodayView } from './views/Schedule'
+import { CurriculumView } from './views/Curriculum'
 import { AssetsView, HeroesView, KitView, MaterialsView, OverviewView, ReferenceView, RendersView, ResourcesView } from './views/Guide'
 
 type Route = { path: string; label: string; render: (api: StoreApi) => ReactNode }
 const routes: Route[] = [
   { path: 'today', label: 'Today', render: (api) => <TodayView api={api} /> },
   { path: 'schedule', label: 'Schedule', render: (api) => <ScheduleView api={api} /> },
+  { path: 'curriculum', label: 'Blender curriculum', render: (api) => <CurriculumView api={api} /> },
   { path: 'overview', label: 'Overview', render: () => <OverviewView /> },
   { path: 'reference', label: 'Reference & scale', render: () => <ReferenceView /> },
   { path: 'kit', label: 'Modular kit', render: (api) => <KitView api={api} /> },

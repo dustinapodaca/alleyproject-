@@ -4,6 +4,7 @@ import { milestones, phases, project } from '../data/guide'
 import { allDays, daysBetween, fmtDate, isDayOff, productionDays, todayISO, type StoreApi } from '../lib'
 import { Check, PageHead, Progress, Rich } from '../ui'
 import { Timeline } from './Timeline'
+import { allLessons, LessonBody } from './Curriculum'
 
 function DayRow({ day, api, today }: { day: Day; api: StoreApi; today: string }) {
   const { store, toggleDone, setNote } = api
@@ -180,6 +181,25 @@ export function TodayView({ api }: { api: StoreApi }) {
           </p>
         </section>
       )}
+
+      {(() => {
+        const lesson = allLessons.find((l) => l.date === today)
+        if (!lesson || lesson.buffer) return null
+        return (
+          <section className="focus focus-lesson">
+            <p className="focus-label">Today's Blender lesson · 45–60 min before the task</p>
+            <div className="focus-row">
+              <Check checked={!!store.done[lesson.id]} onChange={() => toggleDone(lesson.id)} label="Mark today's lesson done" />
+              <div>
+                <LessonBody lesson={lesson} />
+                <a className="link-btn" href="#/curriculum">
+                  Curriculum week {lesson.week} →
+                </a>
+              </div>
+            </div>
+          </section>
+        )
+      })()}
 
       {overdue.length > 0 && (
         <section className="card">
