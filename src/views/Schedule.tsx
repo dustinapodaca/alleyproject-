@@ -191,7 +191,7 @@ export function TodayView({ api }: { api: StoreApi }) {
             <div className="focus-row">
               <Check checked={!!store.done[lesson.id]} onChange={() => toggleDone(lesson.id)} label="Mark today's lesson done" />
               <div>
-                <LessonBody lesson={lesson} />
+                <LessonBody lesson={lesson} open />
                 <a className="link-btn" href="#/curriculum">
                   Curriculum week {lesson.week} →
                 </a>

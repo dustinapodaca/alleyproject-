@@ -91,7 +91,7 @@ export const maskRecipes = [
     name: 'Leak streaks',
     steps: [
       'Object-space Z gradient so streaks fade downward from sills, ledges and pipe brackets.',
-      'Noise Texture scaled tall on Z (e.g. 1 × 1 × 20) for vertical drips.',
+      'Noise Texture stretched along Z for vertical drips: feed it a Mapping node with Scale X 20, Y 20, Z 1.',
       'Multiply gradient × stretched noise; Color Ramp for crisp streak ends.',
       'Use as a darkening and roughness mask; in UE5 rebuild it with world-position Z so it follows any module.',
     ],

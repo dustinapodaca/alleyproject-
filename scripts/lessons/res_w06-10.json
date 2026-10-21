@@ -1,0 +1,732 @@
+{
+ "Mon Nov 23": [
+  {
+   "kind": "manual",
+   "title": "Multiresolution Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/multiresolution.html",
+   "note": "Subdivide vs Simple, Sculpt/Render levels, Apply Base. This is the high-poly side of the plank."
+  },
+  {
+   "kind": "manual",
+   "title": "Subdivision Surface Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html",
+   "note": "Why clean, evenly spaced quads subdivide predictably. Read the levels and topology notes before you build the base mesh."
+  },
+  {
+   "kind": "video",
+   "title": "How to Use the MULTIRESOLUTION Modifier in Blender",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=GRIih8SMaVY",
+   "note": "7:59 in total. Watch 0:40 (Subsurf vs Multires) through 3:38 (Sculpt Base Mesh) and 6:40 (Delete Higher)."
+  }
+ ],
+ "Tue Nov 24": [
+  {
+   "kind": "manual",
+   "title": "Mesh Sculpt Brush Assets (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/brushes.html",
+   "note": "The Essentials brush library. Look up Draw, Clay Strips, Crease Polish and Crease Sharp, Scrape/Fill, Trim, Scrape Multiplane, and Mask."
+  },
+  {
+   "kind": "manual",
+   "title": "Trim Gesture Tools (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/trim_tools.html",
+   "note": "Box Trim, Lasso Trim, Line Trim and Polyline Trim. Difference mode makes clean broken plank ends."
+  },
+  {
+   "kind": "manual",
+   "title": "Mask (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/editing/mask.html",
+   "note": "Mask menu operators (invert, grow, clear) so you can protect areas while you scrape splinters."
+  },
+  {
+   "kind": "video",
+   "title": "Sculpting for Complete Beginners! (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=Lxem4yMs5Dg",
+   "note": "Uploaded October 2024. Watch 3:55 to 21:00 (Sculpt Mode, brushes, strength/radius, symmetry, remesh, dyntopo) and skip the fish project."
+  },
+  {
+   "kind": "video",
+   "title": "Sculpting damage on stone in Blender",
+   "creator": "Artisans of Vaul",
+   "url": "https://www.youtube.com/watch?v=eU1TeUlAN-Y",
+   "note": "A short demo of breaking edges with Scrape and Clay Strips. Use the same moves for rot and splinters on the board."
+  }
+ ],
+ "Fri Nov 27": [
+  {
+   "kind": "manual",
+   "title": "Decimate Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/decimate.html",
+   "note": "Collapse ratio and Planar mode. The fastest route to a plank under 300 tris."
+  },
+  {
+   "kind": "manual",
+   "title": "Shrinkwrap Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/shrinkwrap.html",
+   "note": "Project a low-poly cage onto the sculpt."
+  },
+  {
+   "kind": "manual",
+   "title": "Snapping (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html",
+   "note": "Snap to Face (Project Individual Elements) for manual retopo."
+  },
+  {
+   "kind": "manual",
+   "title": "UV Operators (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html",
+   "note": "The Unwrap and Pack Islands sections (margin, rotation) for the two 4K UV sets."
+  },
+  {
+   "kind": "video",
+   "title": "Retopology for Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=1myOZaxtHes",
+   "note": "Uploaded June 2024. Shrinkwrap and face-snapping retopo, start to finish."
+  }
+ ],
+ "Sat Nov 28": [
+  {
+   "kind": "manual",
+   "title": "Triangulate Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/triangulate.html",
+   "note": "Triangulate the low poly before export so Blender and Marmoset agree on the tangent basis."
+  },
+  {
+   "kind": "manual",
+   "title": "Object Origin (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html",
+   "note": "Set Origin options for matching pivots between the _high and _low objects."
+  },
+  {
+   "kind": "marmoset",
+   "title": "Baking Attributes (Quick Loader)",
+   "creator": "Marmoset",
+   "url": "https://docs.marmoset.co/docs/baking-attributes/",
+   "note": "Quick Loader section: name pairs Name_high and Name_low (not case-sensitive). Everything before the suffix becomes the bake group, and anything after it is a variation."
+  },
+  {
+   "kind": "marmoset",
+   "title": "Baking Tips & Tricks",
+   "creator": "Marmoset",
+   "url": "https://docs.marmoset.co/docs/tips-tricks/",
+   "note": "Triangulate before import, split UVs at hard edges, and keep the low poly close in size to the high."
+  },
+  {
+   "kind": "marmoset",
+   "title": "The Toolbag Baking, Texturing, and Rendering Handbook",
+   "creator": "Marmoset (Steph Everett)",
+   "url": "https://marmoset.co/posts/the-toolbag-baking-texturing-and-rendering-handbook/",
+   "note": "By Steph Everett. Covers Quick Loader's _low/_high requirement, skew and cage."
+  },
+  {
+   "kind": "video",
+   "title": "Baking Props in Marmoset Toolbag 5",
+   "creator": "Art of Pilgrim",
+   "url": "https://www.youtube.com/watch?v=OQPXtfqchto",
+   "note": "16:10, uploaded December 2024. 0:37 Quick Loader, 3:00 Geometry settings, 8:00 naming, 11:02 fixing skew."
+  }
+ ],
+ "Sun Nov 29": [
+  {
+   "kind": "manual",
+   "title": "Viewport Shading (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+   "note": "Solid mode lighting: MatCap vs Studio, and single-colour grey for a quick clay look."
+  },
+  {
+   "kind": "manual",
+   "title": "Light Objects (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html",
+   "note": "Area light power and size for key, fill and rim."
+  },
+  {
+   "kind": "video",
+   "title": "Easy Three Point Lighting Setup in Blender!",
+   "creator": "Ghost Studios",
+   "url": "https://www.youtube.com/watch?v=fbb9yDEkVJM",
+   "note": "Uploaded June 2025. 1:30 infinite background, 3:23 three-point lights, 7:25 camera."
+  }
+ ],
+ "Mon Nov 30": [
+  {
+   "kind": "manual",
+   "title": "Mesh Sculpt Brush Assets (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/brushes/brushes.html",
+   "note": "Clay Strips for brick faces. Trim and Scrape/Fill for flat chipped planes."
+  },
+  {
+   "kind": "manual",
+   "title": "Remesh (Sculpt Mode) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tool_settings/remesh.html",
+   "note": "Voxel Remesh (Ctrl-R) to even out density before you chip the edges."
+  },
+  {
+   "kind": "manual",
+   "title": "Trim Gesture Tools (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/sculpting/tools/trim_tools.html",
+   "note": "Lasso Trim in Difference mode for big chunks knocked off the corbel cap."
+  },
+  {
+   "kind": "video",
+   "title": "Sculpting damage on stone in Blender",
+   "creator": "Artisans of Vaul",
+   "url": "https://www.youtube.com/watch?v=eU1TeUlAN-Y",
+   "note": "Chipped stone edges with Scrape and Clay Strips."
+  },
+  {
+   "kind": "video",
+   "title": "Complete Beginner's Guide to Sculpting in Blender 4.4",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=K7AJVx0H3Ec",
+   "note": "Uploaded April 2025, on the brush-asset version of Sculpt Mode. Optional refresher on brush setup."
+  }
+ ],
+ "Tue Dec 1": [
+  {
+   "kind": "manual",
+   "title": "Displace Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/displace.html",
+   "note": "Texture, Strength, Midlevel and vertex-group limits for local dents."
+  },
+  {
+   "kind": "manual",
+   "title": "Knife Topology Tool (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/knife_topology_tool.html",
+   "note": "Cutting tear lines into the sheet metal"
+  },
+  {
+   "kind": "manual",
+   "title": "Split (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/split.html",
+   "note": "Split or Rip along the knife cut so the torn flap can bend away."
+  },
+  {
+   "kind": "video",
+   "title": "How to Use the Displacement Modifier (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=EDVXIwWeoD0",
+   "note": "0:56 enough geometry, 2:22 add the modifier, 3:18 procedural texture (use Noise for dents)."
+  }
+ ],
+ "Fri Dec 4": [
+  {
+   "kind": "manual",
+   "title": "Cell Fracture (Blender 4.1 Manual, legacy add-on page)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/4.1/addons/object/cell_fracture.html",
+   "note": "The last manual page before it became an extension. Location: 3D Viewport > Object > Quick Effects > Cell Fracture."
+  },
+  {
+   "kind": "article",
+   "title": "Cell Fracture (Blender Extensions platform listing)",
+   "creator": "Blender Foundation",
+   "url": "https://extensions.blender.org/add-ons/cell-fracture/",
+   "note": "Install it via Edit > Preferences > Get Extensions."
+  },
+  {
+   "kind": "manual",
+   "title": "Separate (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/separate.html",
+   "note": "By Loose Parts, if shards are joined. Cell Fracture already outputs separate objects."
+  },
+  {
+   "kind": "video",
+   "title": "Breaking glass using cell fracture - Blender tutorial",
+   "creator": "Imperfect Render",
+   "url": "https://www.youtube.com/watch?v=2huuzkax4l4",
+   "note": "Uploaded November 2024. Plan the fracture lines with annotations, then set up Cell Fracture. Skip the rigid-body section."
+  }
+ ],
+ "Mon Dec 7": [
+  {
+   "kind": "manual",
+   "title": "Randomize Transform (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/randomize.html",
+   "note": "Object > Transform > Randomize Transform: location, rotation and scale ranges with a seed."
+  },
+  {
+   "kind": "manual",
+   "title": "Simple Deform Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/simple_deform.html",
+   "note": "Bend and Twist modes, axis and limits for warped plywood."
+  },
+  {
+   "kind": "manual",
+   "title": "Array Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html",
+   "note": "Relative offset for board runs before you randomize."
+  },
+  {
+   "kind": "video",
+   "title": "How to Randomize Transformations in Blender",
+   "creator": "Nik Kottmann",
+   "url": "https://www.youtube.com/watch?v=W7m_CZ_bkDo",
+   "note": "5:22 in total. Two worked examples."
+  },
+  {
+   "kind": "video",
+   "title": "Using the SIMPLE DEFORM MODIFIER in Blender to Bend, Twist, and Taper Objects!",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=AyuSN4XSNEA",
+   "note": "Recorded in 2020, but the modifier is unchanged. Watch the Bend part."
+  }
+ ],
+ "Tue Dec 8": [
+  {
+   "kind": "manual",
+   "title": "Cell Fracture (Blender 4.1 Manual, legacy add-on page)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/4.1/addons/object/cell_fracture.html",
+   "note": "Option reference. In 4.2+ it is an extension under Object > Quick Effects."
+  },
+  {
+   "kind": "manual",
+   "title": "Using UV Maps (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/applying_image.html",
+   "note": "Several UV maps and shared images, as background for the shared rubble atlas."
+  },
+  {
+   "kind": "manual",
+   "title": "UV Operators (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html",
+   "note": "Pack Islands across several objects in Edit Mode together."
+  },
+  {
+   "kind": "video",
+   "title": "Using the CELL FRACTURE Add-On for Blender - Step by Step Tutorial!",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=EblQRXPaAng",
+   "note": "0:25 enable, 0:51 fracture, 1:36 noise and variation, 3:12 more fragments. Stop before physics at 4:21."
+  },
+  {
+   "kind": "video",
+   "title": "How to UV Unwrap Multiple Objects onto One UV Map!",
+   "creator": "Blender Inferno",
+   "url": "https://www.youtube.com/watch?v=cyHGH9xyvWE",
+   "note": "Blender 4.2, short. Several props sharing one atlas."
+  }
+ ],
+ "Fri Dec 11": [
+  {
+   "kind": "manual",
+   "title": "Curves (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/curves/index.html",
+   "note": "Bezier and NURBS editing for drawing the cable path."
+  },
+  {
+   "kind": "manual",
+   "title": "Curve Geometry (Bevel) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/curves/properties/geometry.html",
+   "note": "Bevel depth and resolution for a quick round cable."
+  },
+  {
+   "kind": "manual",
+   "title": "Curve to Mesh Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/curve_to_mesh.html",
+   "note": "Profile curve and Fill Caps for the Geometry Nodes version."
+  },
+  {
+   "kind": "manual",
+   "title": "Proportional Editing (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/proportional_editing.html",
+   "note": "Pull the middle points down smoothly to sag the cable by hand."
+  },
+  {
+   "kind": "video",
+   "title": "3 ways to make cables out of 3D curves in Blender",
+   "creator": "Jen Abbott Creates",
+   "url": "https://www.youtube.com/watch?v=0oYeZDXKSK8",
+   "note": "Uploaded February 2025, short. Options at 0:03, 1:06 and 2:40."
+  }
+ ],
+ "Sat Dec 12": [
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Selected to Active normal bake from a modelled piece onto a flat card."
+  },
+  {
+   "kind": "manual",
+   "title": "Collection Instancing (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/collection.html",
+   "note": "Reuse litter pieces as instances."
+  },
+  {
+   "kind": "manual",
+   "title": "UV Operators (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html",
+   "note": "Pack Islands for the shared litter atlas."
+  },
+  {
+   "kind": "video",
+   "title": "How to Bake Normal Map Decals in Blender (Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=tmsxEr-Bovc",
+   "note": "Uploaded April 2025. Watch 8:30 to 12:36 (plane, texture, UVs, bake settings, save). The same bake gives normal-mapped debris cards."
+  }
+ ],
+ "Sun Dec 13": [
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "The Wireframe overlay and Statistics, for reading triangle counts."
+  },
+  {
+   "kind": "manual",
+   "title": "Wireframe Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/wireframe.html",
+   "note": "Render-time wireframe on top of the shaded prop."
+  },
+  {
+   "kind": "manual",
+   "title": "Text (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/texts/index.html",
+   "note": "Text objects for tri-count labels in the render."
+  },
+  {
+   "kind": "video",
+   "title": "Blender: Render Your Wireframes | Tutorial",
+   "creator": "PIXXO 3D",
+   "url": "https://www.youtube.com/watch?v=qZ59uoQEME8",
+   "note": "Uploaded January 2025, Blender 4.3."
+  },
+  {
+   "kind": "video",
+   "title": "How to render wireframe on shaded material and make wireframe transparent in Blender",
+   "creator": "blenderian",
+   "url": "https://www.youtube.com/watch?v=zaGAed3KoBo",
+   "note": "0:29 Wireframe modifier, 1:00 material, 2:46 Eevee/Cycles render, 3:40 transparent wire."
+  }
+ ],
+ "Mon Dec 14": [
+  {
+   "kind": "manual",
+   "title": "Cameras (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+   "note": "Orthographic type and Orthographic Scale for framing a 2048 atlas exactly."
+  },
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Normal and other passes baked from leaf geometry to the atlas plane."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Secrets - Bake Displacement Maps from Camera View",
+   "creator": "Blender Secrets",
+   "url": "https://www.youtube.com/watch?v=qh6fbRzViM0",
+   "note": "Short. Bake detail laid out on a plane through an orthographic camera, the same setup as the leaf atlas."
+  }
+ ],
+ "Tue Dec 15": [
+  {
+   "kind": "manual",
+   "title": "Ivy Gen (Blender 4.0 Manual, legacy add-on page)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/4.0/addons/add_curve/ivy_gen.html",
+   "note": "Sidebar (N) > Create tab > Ivy Generator panel. Snap the 3D cursor to the start vertex, then Add New Ivy or Add Default Ivy, then Update Ivy."
+  },
+  {
+   "kind": "article",
+   "title": "Ivy Gen (Blender Extensions platform listing)",
+   "creator": "Blender Foundation",
+   "url": "https://extensions.blender.org/add-ons/ivygen/",
+   "note": "Install it in 4.2+ via Preferences > Get Extensions."
+  },
+  {
+   "kind": "manual",
+   "title": "Curves (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/curves/index.html",
+   "note": "Draw your own ivy strand as a curve if Ivy Gen does not suit."
+  },
+  {
+   "kind": "video",
+   "title": "Blender's Built-In IvyGen Is EASY & FAST | Tutorial",
+   "creator": "PIXXO 3D",
+   "url": "https://www.youtube.com/watch?v=WsRUjkEDPOg",
+   "note": "Uploaded January 2023 (pre-extension). The workflow is the same once the extension is installed."
+  }
+ ],
+ "Fri Dec 18": [
+  {
+   "kind": "manual",
+   "title": "Introduction (Geometry Nodes) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/introduction.html",
+   "note": "The modifier, node groups and fields basics."
+  },
+  {
+   "kind": "manual",
+   "title": "Distribute Points on Faces Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/point/distribute_points_on_faces.html",
+   "note": "Random vs Poisson Disk, density, seed."
+  },
+  {
+   "kind": "manual",
+   "title": "Instance on Points Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances/instance_on_points.html",
+   "note": "Pick Instance from a collection, plus rotation and scale inputs."
+  },
+  {
+   "kind": "video",
+   "title": "EASY GRASS in Blender with Geometry Nodes!",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=QczIET_E2h0",
+   "note": "0:49 blade cards, 5:32 transparency, 12:03 Distribute Points on Faces, 13:50 Instance on Points, 15:36 randomize. Recorded in 2021, but the node names are unchanged."
+  }
+ ],
+ "Sat Dec 19": [
+  {
+   "kind": "manual",
+   "title": "Skin Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/skin.html",
+   "note": "Branch structures from edges, plus per-vertex radius (Ctrl-A)."
+  },
+  {
+   "kind": "manual",
+   "title": "Vertex Paint (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html",
+   "note": "Paint the wind-weight gradient (dark at the trunk, bright at the tips)."
+  },
+  {
+   "kind": "video",
+   "title": "Create quick branches using Skin Modifier in Blender",
+   "creator": "ItsPaulTodd",
+   "url": "https://www.youtube.com/watch?v=4aDbM9Tpp1M",
+   "note": "Short. Blender 3.5, but the workflow is unchanged."
+  },
+  {
+   "kind": "video",
+   "title": "Stylized foliage with Wind in Unreal Engine 5 & Blender",
+   "creator": "ALL THE WORKS",
+   "url": "https://www.youtube.com/watch?v=7pfcBaRcVOI",
+   "note": "Watch 17:28 (layered wind material) and 24:27 (UE5 tips)."
+  },
+  {
+   "kind": "ue5",
+   "title": "World Position Offset Material Functions",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/world-position-offset-material-functions-in-unreal-engine",
+   "note": "SimpleGrassWind: WindIntensity, WindWeight, WindSpeed, AdditionalWPO. Feed a Vertex Color channel into WindWeight."
+  }
+ ],
+ "Sun Dec 20": [
+  {
+   "kind": "manual",
+   "title": "Cameras (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+   "note": "Orthographic camera for the side-by-side atlas, card and plant sheet."
+  },
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Wireframe overlay to show card density."
+  },
+  {
+   "kind": "article",
+   "title": "Creating 3D Scene of Decaying Orthodox Church in Swamp",
+   "creator": "80 Level (Nicolas Pablos)",
+   "url": "https://80.lv/articles/breakdown-creating-a-3d-scene-of-a-decaying-orthodox-church-in-a-swamp",
+   "note": "Published September 2026. Read the Vegetation section: atlases, high-poly bakes to cards, and assembled plants. Brickwork and Props are relevant too."
+  }
+ ],
+ "Mon Dec 21": [
+  {
+   "kind": "manual",
+   "title": "Solidify Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html",
+   "note": "Offset the decal plane off the wall surface (or move it along normals)."
+  },
+  {
+   "kind": "manual",
+   "title": "Using UV Maps (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/applying_image.html",
+   "note": "Second UV map or atlas UVs for the decal planes."
+  },
+  {
+   "kind": "video",
+   "title": "Create a Decal Atlas",
+   "creator": "FlippedNormals",
+   "url": "https://www.youtube.com/watch?v=NCv_R64-34k",
+   "note": "18:03, a free chapter of 'Sci-Fi Game Environment in Blender & UE4'. Building and mapping a decal atlas."
+  },
+  {
+   "kind": "ue5",
+   "title": "Using Mesh Decals",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/using-mesh-decals-in-unreal-engine",
+   "note": "Keep the geometry just in front of the surface, feather the edges for soft fades, and use WPO offset to fix intersections."
+  }
+ ],
+ "Tue Dec 22": [
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Normal bake and Emit-based height bake from the sculpted plane to the 1K atlas."
+  },
+  {
+   "kind": "manual",
+   "title": "Multiresolution Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/multiresolution.html",
+   "note": "Sculpt the cracks on a subdivided plane."
+  },
+  {
+   "kind": "video",
+   "title": "How to Bake Normal Map Decals in Blender (Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=tmsxEr-Bovc",
+   "note": "1:26 model the decal, 8:30 to 12:36 bake to a plane, 13:40 apply."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Secrets - Bake Displacement Maps from Camera View",
+   "creator": "Blender Secrets",
+   "url": "https://www.youtube.com/watch?v=qh6fbRzViM0",
+   "note": "Height map from a sculpted plane with an orthographic camera."
+  },
+  {
+   "kind": "ue5",
+   "title": "Decal Materials",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/decal-materials-in-unreal-engine",
+   "note": "Deferred Decal domain, DBuffer blend modes (Translucent, Alpha Composite)."
+  }
+ ],
+ "Sat Dec 26": [
+  {
+   "kind": "manual",
+   "title": "Loop Cut (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/loop.html",
+   "note": "Add edge loops where moss and grime gradients need vertices."
+  },
+  {
+   "kind": "manual",
+   "title": "Vertex Paint (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html",
+   "note": "Painting colour attributes."
+  },
+  {
+   "kind": "manual",
+   "title": "FBX (Legacy)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/files/import_export/fbx_legacy.html",
+   "note": "The FBX exporter page in 5.2. Check the vertex colour option under Geometry so colour attributes reach UE5"
+  },
+  {
+   "kind": "video",
+   "title": "Import Vertex Color from Blender into Unreal Engine 5",
+   "creator": "Drawcall",
+   "url": "https://www.youtube.com/watch?v=W8uqVWs9fTg",
+   "note": "Uploaded January 2025, Blender 4. The full round trip plus a preview material."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Vertex Painting Tutorial | Master Color Attributes in Blender",
+   "creator": "Jouleconcepts",
+   "url": "https://www.youtube.com/watch?v=6pNGIJdudyk",
+   "note": "Uploaded September 2025. Colour attributes and game-asset tips."
+  },
+  {
+   "kind": "ue5",
+   "title": "FBX Import Options Reference",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-import-options-reference-in-unreal-engine",
+   "note": "Vertex Color Import Option: Replace takes the FBX colours, Ignore keeps colours painted in the editor."
+  },
+  {
+   "kind": "ue5",
+   "title": "Activating and Using Mesh Paint Mode",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/activating-and-using-mesh-paint-mode-in-unreal-engine",
+   "note": "Painting extra grime per instance in UE. Nanite meshes do not show per-instance vertex colour."
+  }
+ ],
+ "Sun Dec 27": [
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Bake the edge-wear, dirt and chip masks, then pack them into R, G and B."
+  },
+  {
+   "kind": "manual",
+   "title": "Using UV Maps (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/applying_image.html",
+   "note": "The mask shares the barrel's main UVs."
+  },
+  {
+   "kind": "video",
+   "title": "Adding dirt to models in Unreal Engine using Masks",
+   "creator": "FastTrack Tutorials",
+   "url": "https://www.youtube.com/watch?v=II_1kR9REt0",
+   "note": "Variation masks and how a material uses them."
+  },
+  {
+   "kind": "ue5",
+   "title": "Setting Up a Texture Blended Material for Vertex Weights Painting",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-a-texture-blended-material-for-vertex-weights-painting-in-unreal-engine",
+   "note": "Use the 3-way R/G/B Lerp graph with your packed mask texture instead of vertex colour."
+  }
+ ]
+}

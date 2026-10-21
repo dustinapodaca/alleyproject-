@@ -1,0 +1,682 @@
+{
+ "Mon Oct 19": [
+  {
+   "kind": "manual",
+   "title": "Navigation (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/navigate/navigation.html",
+   "note": "Orbit, pan, zoom, numpad views; skim, 10 min"
+  },
+  {
+   "kind": "manual",
+   "title": "Transform: Move (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/move.html",
+   "note": "G/R/S with axis locks and typed values; Rotate and Scale pages sit next to it"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 5 Complete Beginners Guide - FREE COURSE - Part 1 - The Interface",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=kVcY7K-JA1Y",
+   "note": "Whole video, 12:42 (Blender 5): interface, navigation, views, G/R/S, toolbar"
+  },
+  {
+   "kind": "video",
+   "title": "Blender Donut Tutorial Part 1 (2026)",
+   "creator": "Blender Guru",
+   "url": "https://www.youtube.com/watch?v=-tbSCMbJA6o",
+   "note": "Optional second pass, 0:00-15:42 (install, navigation, adding and moving objects); Blender 5.0"
+  }
+ ],
+ "Tue Oct 20": [
+  {
+   "kind": "manual",
+   "title": "Mesh Structure (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/structure.html",
+   "note": "Vertices, edges, faces, loops; 10 min read"
+  },
+  {
+   "kind": "manual",
+   "title": "Loop Cut (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/loop.html",
+   "note": "Ctrl+R; neighbours in the same menu: Extrude Faces (modeling/meshes/editing/face/extrude_faces.html), Inset Faces (.../face/inset_faces.html), Bevel (.../edge/bevel.html)"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 5 Complete Beginners Guide - FREE COURSE - Part 4 - Old Man Details",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=GB6xDutIOx0",
+   "note": "1:31-13:25: Edit Mode, vertex/edge/face modes, Extrude, Loop Cut, Inset, face loops (~12 min). Bevel is not covered here; see the manual Bevel page"
+  }
+ ],
+ "Fri Oct 23": [
+  {
+   "kind": "manual",
+   "title": "Cameras (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+   "note": "Lens (Focal Length, Shift), Camera (Sensor Fit, Size) and Background Images sections"
+  },
+  {
+   "kind": "video",
+   "title": "Camera Perspective Matching in Blender! (Free & Paid Tools)",
+   "creator": "Nik Kottmann",
+   "url": "https://www.youtube.com/watch?v=vrEmdEk_O78",
+   "note": "6:08-9:37 for the free fSpy workflow (2022, but the fSpy steps are unchanged); 0:33-6:08 shows the paid Perspective Plotter add-on, optional"
+  },
+  {
+   "kind": "article",
+   "title": "fSpy-Blender importer v1.0.3 (GitHub releases)",
+   "creator": "stuffmatic",
+   "url": "https://github.com/stuffmatic/fSpy-Blender/releases",
+   "note": "Install the release zip via Preferences > Add-ons > Install from Disk (do not unzip). Last release 2019 but users report it works in Blender 5.0/5.1 (issue #90); add a camera to the scene before importing"
+  },
+  {
+   "kind": "article",
+   "title": "FTC - Fit The Camera (extension)",
+   "creator": "TonyS87",
+   "url": "https://extensions.blender.org/add-ons/fit-the-camera/",
+   "note": "In-Blender alternative to fSpy: vanishing-point camera match; v1.1.1 (Oct 15 2026), requires Blender 5.2 LTS"
+  }
+ ],
+ "Sat Oct 24": [
+  {
+   "kind": "manual",
+   "title": "Scene Properties (Units) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html",
+   "note": "Units panel: Unit System, Unit Scale, Length"
+  },
+  {
+   "kind": "manual",
+   "title": "Snapping (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html",
+   "note": "Increment and Absolute Grid Snap; also see 3D Cursor (editors/3dview/3d_cursor.html), Object Origin (scene_layout/object/origin.html), Collections (scene_layout/collections/collections.html)"
+  },
+  {
+   "kind": "manual",
+   "title": "FBX (Legacy) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/files/import_export/fbx_legacy.html",
+   "note": "In Blender 5.2 this legacy page documents the FBX exporter; the main FBX page now covers the new importer. Some options aren't written up yet"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 4.5 to Unreal Engine 5.6 - Fix Scale & Animation in 2025",
+   "creator": "Imphenzia",
+   "url": "https://www.youtube.com/watch?v=l2j5HKj8C8Y",
+   "note": "Watch the static-mesh/scale part; skip the animation section"
+  },
+  {
+   "kind": "ue5",
+   "title": "Importing Static Meshes in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-static-meshes-in-unreal-engine",
+   "note": "States 1 Unreal unit = 1 cm; import steps"
+  },
+  {
+   "kind": "ue5",
+   "title": "Units of Measurement in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/units-of-measurement-in-unreal-engine",
+   "note": "Distance/length default unit is centimetres"
+  }
+ ],
+ "Sun Oct 25": [
+  {
+   "kind": "manual",
+   "title": "Viewport Shading (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+   "note": "Solid / Material Preview / Rendered modes"
+  },
+  {
+   "kind": "manual",
+   "title": "Light Objects (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html",
+   "note": "Sun light settings; World colour: render/lights/world.html"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 5 Complete Beginners Guide - FREE COURSE - Part 2 Materials",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=J2OpaKlChI8",
+   "note": "4:30-11:09: camera view, viewport modes, adding lights, render engines, rendering an image"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 5 Complete Beginners Guide - FREE COURSE - Part 8 - Lights & Composit",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=7moxMNaRlk8",
+   "note": "Optional, 6:30-9:15: World shader and area light"
+  }
+ ],
+ "Mon Oct 26": [
+  {
+   "kind": "manual",
+   "title": "Array Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html",
+   "note": "Relative/constant offset, count"
+  },
+  {
+   "kind": "manual",
+   "title": "Solidify Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/solidify.html",
+   "note": "Also Mirror Modifier: modeling/modifiers/generate/mirror.html; stack basics: modeling/modifiers/introduction.html"
+  },
+  {
+   "kind": "video",
+   "title": "Modifiers for Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=F_f-O-W9lMU",
+   "note": "1:42-13:40 Mirror, 24:55-28:42 Array, 34:47-36:09 Solidify, 41:20-45:39 apply scale and stack order (~22 min total)"
+  }
+ ],
+ "Tue Oct 27": [
+  {
+   "kind": "manual",
+   "title": "Boolean Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/booleans.html",
+   "note": "Difference cutter workflow; Exact vs Fast solver"
+  },
+  {
+   "kind": "manual",
+   "title": "Spin (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/spin.html",
+   "note": "For the round arch head; Bevel Modifier: modeling/modifiers/generate/bevel.html"
+  },
+  {
+   "kind": "video",
+   "title": "Modifiers for Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=F_f-O-W9lMU",
+   "note": "18:49-24:55 Bevel modifier, 30:53-33:29 Boolean (~9 min)"
+  },
+  {
+   "kind": "video",
+   "title": "How to Use the Spin Tool in Blender",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=LVHuhclIcB8",
+   "note": "Whole video (Jan 2026); use it for the round arch head"
+  }
+ ],
+ "Fri Oct 30": [
+  {
+   "kind": "manual",
+   "title": "Sidebar (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/sidebar.html",
+   "note": "Item tab: Location, Rotation, Scale, Dimensions"
+  },
+  {
+   "kind": "manual",
+   "title": "Numeric Input (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/transform/control/numeric_input.html",
+   "note": "Typed transforms (S 2 Enter); also Measure tool: editors/3dview/toolbar/measure.html and Snapping: editors/3dview/controls/snapping.html"
+  },
+  {
+   "kind": "video",
+   "title": "Exact measurements - Blender 4",
+   "creator": "Plockis",
+   "url": "https://www.youtube.com/watch?v=3YUFhlVQiqQ",
+   "note": "0:00-3:00 (units, typed lengths, snapping to exact values); 3:00 onward uses the optional Edit Mesh Tools add-on. Whole video 6:09"
+  }
+ ],
+ "Sat Oct 31": [
+  {
+   "kind": "manual",
+   "title": "Collection (Instancing) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/collection.html",
+   "note": "Collection instances for repeated pieces"
+  },
+  {
+   "kind": "manual",
+   "title": "Array Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html",
+   "note": "Plank arrays"
+  },
+  {
+   "kind": "video",
+   "title": "How to use and have full control of your collection instances (Blender tutorial)",
+   "creator": "Hugo Antunes (Art with Blender)",
+   "url": "https://www.youtube.com/watch?v=7XUCjBjE10k",
+   "note": "Whole video (2021; collection instancing UI unchanged)"
+  }
+ ],
+ "Sun Nov 1": [
+  {
+   "kind": "manual",
+   "title": "Collections: Exporters (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/collections/collections.html#collections-exporters",
+   "note": "Collection Properties > Exporters; Export All; File > Export All Collections. FBX is listed as 'FBX legacy'"
+  },
+  {
+   "kind": "manual",
+   "title": "FBX (Legacy) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/files/import_export/fbx_legacy.html",
+   "note": "Exporter options (Batch Mode, Forward/Up)"
+  },
+  {
+   "kind": "ue5",
+   "title": "Importing Assets Using Interchange in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-assets-using-interchange-in-unreal-engine",
+   "note": "Reimport section: UE remembers the pipeline and options used"
+  },
+  {
+   "kind": "ue5",
+   "title": "Reimporting Assets Automatically in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/reimporting-assets-automatically-in-unreal-engine",
+   "note": "Auto-reimport when the source FBX changes; monitored folders"
+  },
+  {
+   "kind": "video",
+   "title": "UE5 Quick Tip 39: How to Get UE5 Static Mesh Asset Import Dialog Menu Back on Reimports",
+   "creator": "WorldofLevelDesign",
+   "url": "https://www.youtube.com/watch?v=da02Fdv_tVA",
+   "note": "Whole video, 6:03 (Dec 2025)"
+  },
+  {
+   "kind": "article",
+   "title": "Send to Unreal docs (community-maintained fork)",
+   "creator": "Poly Hammer (fork of Epic BlenderTools)",
+   "url": "https://poly-hammer.github.io/BlenderTools/send2ue/",
+   "note": "Optional. Latest Send to Unreal 2.6.7 (Nov 2025) is tested on Blender 3.6/4.2 and UE 5.3/5.4 only; 5.x support unconfirmed, so batch FBX / Collection Exporters is the safe default"
+  }
+ ],
+ "Mon Nov 2": [
+  {
+   "kind": "manual",
+   "title": "Principled BSDF (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html",
+   "note": "Base Color, Roughness, Metallic, Normal inputs"
+  },
+  {
+   "kind": "manual",
+   "title": "Image Texture Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/image.html",
+   "note": "Also Mapping Node: render/shader_nodes/utilities/vector/mapping.html; Node Wrangler: addons/node_wrangler.html; Non-Color: render/color_management/color_spaces.html"
+  },
+  {
+   "kind": "video",
+   "title": "Blender Basic Texturing Tutorial (Donut Part 5)",
+   "creator": "Blender Guru",
+   "url": "https://www.youtube.com/watch?v=h30ZJQrb4s8",
+   "note": "0:20-15:57: image textures, what PBR textures are, importing a PBR set manually (~16 min; Dec 2025). Skip the Poliigon add-on section"
+  },
+  {
+   "kind": "video",
+   "title": "Procedural Nodes For Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=5B244CYX1Tw",
+   "note": "10:50-13:05 Node Wrangler shortcuts; 52:10-55:42 Vector nodes (Mapping)"
+  }
+ ],
+ "Tue Nov 3": [
+  {
+   "kind": "manual",
+   "title": "Bevel Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/input/bevel.html",
+   "note": "Cycles-only edge mask source; also Ambient Occlusion Node: render/shader_nodes/input/ao.html"
+  },
+  {
+   "kind": "manual",
+   "title": "Color Ramp Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/color/color_ramp.html",
+   "note": "Also Noise Texture (render/shader_nodes/textures/noise.html), Gradient Texture (.../textures/gradient.html), Mix Color (.../color/mix.html), Node Groups (interface/controls/nodes/groups.html)"
+  },
+  {
+   "kind": "video",
+   "title": "Procedural Nodes For Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=5B244CYX1Tw",
+   "note": "24:51-35:53 Texture nodes, 35:53-45:58 Input nodes, 45:58-52:10 Converter (Color Ramp), 1:04:40-end Group nodes (~35 min; 2021 but node behaviour unchanged)"
+  }
+ ],
+ "Fri Nov 6": [
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Bake types, Selected to Active, Margin, output target"
+  },
+  {
+   "kind": "video",
+   "title": "How to Texture Bake Procedural Materials in Blender (Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=B2kFeMBBBjc",
+   "note": "0:00-14:58 (skip the paid add-on section), 19:06 total; 2023 video, bake panel unchanged in 5.x"
+  }
+ ],
+ "Sat Nov 7": [
+  {
+   "kind": "manual",
+   "title": "Combine Color Node (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/color/combine_color.html",
+   "note": "Pack three greyscale masks into R, G, B"
+  },
+  {
+   "kind": "manual",
+   "title": "Render Baking (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/render/cycles/baking.html",
+   "note": "Bake each packed mask out to one image"
+  },
+  {
+   "kind": "video",
+   "title": "DI - Channel Packing with Blender (ARM, ORM Texture Maps)",
+   "creator": "Digital Impostor",
+   "url": "https://www.youtube.com/watch?v=P3G0BsbdSGo",
+   "note": "Whole video, 8:41 (2020; Separate/Combine RGB nodes are now named Separate/Combine Color)"
+  }
+ ],
+ "Sun Nov 8": [
+  {
+   "kind": "manual",
+   "title": "Vertex Paint (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/sculpt_paint/vertex_paint/index.html",
+   "note": "Painting colour attributes"
+  },
+  {
+   "kind": "manual",
+   "title": "Object Data (Color Attributes) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/properties/object_data.html",
+   "note": "Color Attributes panel: add, set active/render"
+  },
+  {
+   "kind": "manual",
+   "title": "FBX (Legacy) (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/files/import_export/fbx_legacy.html",
+   "note": "Exporter page. The manual does not document the colour option; in the export dialog look under Geometry for the vertex colour setting (None / sRGB / Linear) and use sRGB, the default"
+  },
+  {
+   "kind": "video",
+   "title": "Import Vertex Color from Blender into Unreal Engine 5",
+   "creator": "Drawcall",
+   "url": "https://www.youtube.com/watch?v=W8uqVWs9fTg",
+   "note": "Whole video (Blender 4 + UE5)"
+  },
+  {
+   "kind": "ue5",
+   "title": "Interchange Import Reference in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/interchange-import-reference-in-unreal-engine",
+   "note": "Common Meshes > Vertex Color Import Option: Replace / Ignore / Override"
+  },
+  {
+   "kind": "ue5",
+   "title": "FBX Static Mesh Pipeline in Unreal Engine (UE 5.8 docs)",
+   "creator": "Epic Games",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine",
+   "note": "Vertex colours section"
+  }
+ ],
+ "Mon Nov 9": [
+  {
+   "kind": "manual",
+   "title": "Subdivision Surface Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/subdivision_surface.html",
+   "note": "High-poly strips"
+  },
+  {
+   "kind": "manual",
+   "title": "Bevel (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bevel.html",
+   "note": "Support bevels on strip edges"
+  },
+  {
+   "kind": "video",
+   "title": "Trim Sheets: A Complete Tutorial",
+   "creator": "Josh - Blender Bros (Josh Gambrell)",
+   "url": "https://www.youtube.com/watch?v=sny8ot97Ixc",
+   "note": "49:25 total; watch roughly the first 20 min on planning and modeling strips"
+  }
+ ],
+ "Tue Nov 10": [
+  {
+   "kind": "manual",
+   "title": "Seams (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/uv/unwrapping/seams.html",
+   "note": "Mark Seam"
+  },
+  {
+   "kind": "manual",
+   "title": "UV Operators (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html",
+   "note": "Unwrap, Smart UV Project, Follow Active Quads"
+  },
+  {
+   "kind": "video",
+   "title": "UV Unwrapping for Beginners - Blender Tutorial",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=Df8-ftyqZ_8",
+   "note": "4:38-26:10 core unwrapping and seams, 36:28-40:47 Follow Active Quads, 45:35-46:22 apply scale (~28 min); July 2026"
+  },
+  {
+   "kind": "article",
+   "title": "Texel Density Checker (extension)",
+   "creator": "IvanVostrikov",
+   "url": "https://extensions.blender.org/add-ons/texel-density-checker/",
+   "note": "Install from Get Extensions; v2026.1.1, Blender 4.2+"
+  }
+ ],
+ "Fri Nov 13": [
+  {
+   "kind": "manual",
+   "title": "Weighted Normal Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/normals/weighted_normal.html",
+   "note": "Face-weighted normals on bevelled modules"
+  },
+  {
+   "kind": "manual",
+   "title": "Smooth By Angle Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/normals/smooth_by_angle.html",
+   "note": "Replaces old Auto Smooth; also Object Origin (scene_layout/object/origin.html) for pivots"
+  },
+  {
+   "kind": "video",
+   "title": "Essential Tips for Modular Building",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=QE4aiWp5bZk",
+   "note": "Whole video, 3:32"
+  },
+  {
+   "kind": "video",
+   "title": "Modular Walls - Blender to Unreal 5",
+   "creator": "Chrismartinartist",
+   "url": "https://www.youtube.com/watch?v=vub6PxBM12s",
+   "note": "Whole video, 14:45: grid-sized walls and pivots into UE5"
+  }
+ ],
+ "Sat Nov 14": [
+  {
+   "kind": "manual",
+   "title": "Spin (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/tools/spin.html",
+   "note": "Arch profiles"
+  },
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Face Orientation (Geometry section) to catch flipped normals"
+  },
+  {
+   "kind": "video",
+   "title": "How to Use the Spin Tool in Blender",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=LVHuhclIcB8",
+   "note": "Rewatch for arches and mouldings (Jan 2026)"
+  }
+ ],
+ "Sun Nov 15": [
+  {
+   "kind": "manual",
+   "title": "Asset Browser (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/asset_browser.html",
+   "note": "Mark as Asset, catalogs, drag in"
+  },
+  {
+   "kind": "manual",
+   "title": "Asset Libraries: Introduction (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/files/asset_libraries/introduction.html",
+   "note": "Where assets live; also Collections Exporters (scene_layout/collections/collections.html#collections-exporters) for batch export"
+  },
+  {
+   "kind": "video",
+   "title": "Build Scenes FASTER: Mastering the Asset Browser in Blender 5.1",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=j1EhPPFrZgk",
+   "note": "Whole video, 9:03 (Blender 5.1)"
+  }
+ ],
+ "Mon Nov 16": [
+  {
+   "kind": "manual",
+   "title": "Mirror Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html",
+   "note": "Mirroring modules"
+  },
+  {
+   "kind": "manual",
+   "title": "UV Operators (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html",
+   "note": "Unwrap/projection options for matching islands across a corner"
+  },
+  {
+   "kind": "video",
+   "title": "UV Unwrapping for Beginners - Blender Tutorial",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=Df8-ftyqZ_8",
+   "note": "Review 10:22-14:18 (texture repeat, seamless textures) and 40:47-44:09 (projection types, Project From View)"
+  }
+ ],
+ "Tue Nov 17": [
+  {
+   "kind": "manual",
+   "title": "Duplicate Linked (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/duplicate_linked.html",
+   "note": "Alt+D: shared mesh data"
+  },
+  {
+   "kind": "manual",
+   "title": "Knife Topology Tool (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/knife_topology_tool.html",
+   "note": "K; also Separate (modeling/meshes/editing/mesh/separate.html)"
+  },
+  {
+   "kind": "video",
+   "title": "Blender 5 Complete Beginners Guide FREE COURSE Part 7 the street",
+   "creator": "Grant Abbitt (Gabbitt)",
+   "url": "https://www.youtube.com/watch?v=ctBx6OQ4Ljg",
+   "note": "4:52-5:53 Linked Duplicates (Alt+D), ~1 min"
+  }
+ ],
+ "Fri Nov 20": [
+  {
+   "kind": "manual",
+   "title": "Array Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/array.html",
+   "note": "Constant Offset for exact riser and tread steps"
+  },
+  {
+   "kind": "manual",
+   "title": "Snapping (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/controls/snapping.html",
+   "note": "Increment snapping to the step grid"
+  },
+  {
+   "kind": "video",
+   "title": "Modifiers for Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=F_f-O-W9lMU",
+   "note": "Rewatch 24:55-28:42 Array"
+  }
+ ],
+ "Sat Nov 21": [
+  {
+   "kind": "manual",
+   "title": "Curve Geometry (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/curves/properties/geometry.html",
+   "note": "Bevel Depth/Resolution for pipes"
+  },
+  {
+   "kind": "manual",
+   "title": "Curve Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/curve.html",
+   "note": "Bend arrays along a curve; Convert to mesh: scene_layout/object/editing/convert.html"
+  },
+  {
+   "kind": "video",
+   "title": "How to Use Curves for Beginners (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=gxzWCH1Q4fM",
+   "note": "Whole video (June 2025): Bezier curves, bevel depth, converting to mesh"
+  }
+ ],
+ "Sun Nov 22": [
+  {
+   "kind": "manual",
+   "title": "Displace Modifier (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/displace.html",
+   "note": "Light displacement on subdivided planes; Subdivide: modeling/meshes/editing/edge/subdivide.html"
+  },
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays (Blender 5.2 LTS Manual)",
+   "creator": "Blender Foundation",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Statistics overlay (Guides) for triangle counts"
+  },
+  {
+   "kind": "video",
+   "title": "How to Use the Displacement Modifier (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=EDVXIwWeoD0",
+   "note": "Whole video, about 7-8 min (2022)"
+  }
+ ]
+}

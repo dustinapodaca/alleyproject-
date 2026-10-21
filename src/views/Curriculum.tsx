@@ -1,15 +1,42 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { curriculum, type Lesson } from '../data/curriculum'
 import { benchmarkProjects, curriculumIntro, gaps, learningResources, setup, standards } from '../data/curriculumGuide'
 import { fmtDate, todayISO, type StoreApi } from '../lib'
 import { Check, PageHead, Progress, Rich } from '../ui'
+import type { LessonText } from '../data/lessons'
+import { Md } from '../md'
 
 export const allLessons = curriculum.flatMap((w) => w.lessons.map((l) => ({ ...l, week: w.n })))
 const realLessons = allLessons.filter((l) => !l.buffer)
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
 
-export function LessonBody({ lesson }: { lesson: Lesson }) {
+// The full lesson text is large, so it loads in its own chunk the first time a lesson is shown.
+let lessonCache: Record<string, LessonText> | null = null
+let lessonLoad: Promise<Record<string, LessonText>> | null = null
+function useLessonText() {
+  const [data, setData] = useState(lessonCache)
+  useEffect(() => {
+    if (lessonCache) return
+    lessonLoad ??= import('../data/lessons').then((m) => (lessonCache = m.lessonText))
+    lessonLoad.then(setData)
+  }, [])
+  return data
+}
+
+export function FullLesson({ id, open = false }: { id: string; open?: boolean }) {
+  const all = useLessonText()
+  const t = all?.[id]
+  if (!t) return null
+  return (
+    <details className="lesson-full" open={open}>
+      <summary>{open ? 'Full lesson' : 'Open the full lesson'} · {t.title}</summary>
+      <Md text={t.body} />
+    </details>
+  )
+}
+
+export function LessonBody({ lesson, full = true, open = false }: { lesson: Lesson; full?: boolean; open?: boolean }) {
   return (
     <>
       <p className="day-task">
@@ -30,6 +57,7 @@ export function LessonBody({ lesson }: { lesson: Lesson }) {
           <span className="std">Standard check</span> <Rich text={lesson.standard} />
         </p>
       )}
+      {full && <FullLesson id={lesson.id} open={open} />}
     </>
   )
 }
@@ -95,6 +123,13 @@ export function CurriculumView({ api }: { api: StoreApi }) {
                 <li key={r}>{r}</li>
               ))}
             </ol>
+            <p className="muted small" style={{ marginTop: 10 }}>
+              Every lesson below opens in full: resources to watch and read, step-by-step instructions for Blender 5.2, common mistakes, the drill with its pass check, and how it feeds the Mill Alley task. The same lessons are in{' '}
+              <a href="Blender-Lessons.pdf" target="_blank" rel="noreferrer">
+                the PDF ↗
+              </a>
+              .
+            </p>
           </section>
           {curriculum.map((w) => {
             const doneCount = w.lessons.filter((l) => api.store.done[l.id]).length

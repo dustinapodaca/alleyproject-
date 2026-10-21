@@ -1,0 +1,646 @@
+{
+ "Mon Dec 28": [
+  {
+   "kind": "manual",
+   "title": "Join",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/editing/join.html",
+   "note": "Ctrl+J merges the debris pieces into one mesh for a single exported cluster (one draw call, one pivot)."
+  },
+  {
+   "kind": "manual",
+   "title": "Collection (Instancing)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/collection.html",
+   "note": "The non-destructive option: keep the cluster as a collection and place instances; pair with Duplicate Linked (Alt+D) for shared mesh data."
+  },
+  {
+   "kind": "video",
+   "title": "Quick Tip: Quick Set Dressing for Unreal Engine using Blender",
+   "creator": "Learn Squared (Joe Garth)",
+   "url": "https://www.youtube.com/watch?v=j4fi2ARaAoU",
+   "note": "4:56, watch all. Building dressing clusters in Blender for UE (2020, workflow unchanged)."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Tutorial - Full Guide to Instancing Collections!",
+   "creator": "Blender Made Easy",
+   "url": "https://www.youtube.com/watch?v=FGcJ255ZMdY",
+   "note": "Optional. Collection instances vs real geometry (2021; the instancing UI is the same in 5.x)."
+  }
+ ],
+ "Tue Dec 29": [
+  {
+   "kind": "manual",
+   "title": "Cameras",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/cameras.html",
+   "note": "Camera Properties > Viewport Display > Composition Guides (Thirds, Center/Diagonal, Golden ratio/triangles, Harmony triangles). In camera view, turn them on or off with Overlays > Camera Guides."
+  },
+  {
+   "kind": "video",
+   "title": "Understanding Composition",
+   "creator": "Blender Guru (Andrew Price)",
+   "url": "https://www.youtube.com/watch?v=O8i7OKbWmRM",
+   "note": "About 23 min of composition theory: thirds, leading lines, framing. The theory doesn't depend on the Blender version (2014)."
+  },
+  {
+   "kind": "video",
+   "title": "Frame Your Renders Better with Camera Composition Guides - Blender Quick Tips",
+   "creator": "247 Creative Secrets",
+   "url": "https://www.youtube.com/watch?v=49uewowIGqA",
+   "note": "Short 2025 how-to for turning the guides on in current Blender."
+  }
+ ],
+ "Sat Jan 2": [
+  {
+   "kind": "manual",
+   "title": "Distribute Points on Faces Node",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/point/distribute_points_on_faces.html",
+   "note": "Use the Selection input with a named attribute or vertex group so points land only on the crack/wall-base faces."
+  },
+  {
+   "kind": "manual",
+   "title": "Instance on Points Node",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/instances/instance_on_points.html",
+   "note": "Instance the weed meshes; add random rotation and scale."
+  },
+  {
+   "kind": "video",
+   "title": "Scattering Objects by WEIGHT PAINT with Geometry Nodes in Blender!",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=KGPP27h01g0",
+   "note": "Restrict a scatter to painted or selected areas: exactly the crack-weed setup (2023, Blender 3.4+ nodes; same in 5.x)."
+  },
+  {
+   "kind": "video",
+   "title": "Blender 4.2 - An intro to Geometry Nodes and Scattering",
+   "creator": "Nino",
+   "url": "https://www.youtube.com/watch?v=M4KuMlvalfI",
+   "note": "Optional refresher on the basic scatter graph in 4.2+ (Oct 2024)."
+  }
+ ],
+ "Mon Jan 4": [
+  {
+   "kind": "manual",
+   "title": "World Environment",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/world.html",
+   "note": "HDRI via Environment Texture in the World."
+  },
+  {
+   "kind": "manual",
+   "title": "Light Objects",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html",
+   "note": "Area/spot/point lights for the key, fill and rim."
+  },
+  {
+   "kind": "video",
+   "title": "The ULTIMATE GUIDE to HDRI Lighting in Blender!",
+   "creator": "The CG Essentials",
+   "url": "https://www.youtube.com/watch?v=N3DZL56cG84",
+   "note": "Feb 2024. Watch 4:29-13:21 (add, rotate, light with an HDRI); 13:21+ dome setup is optional."
+  },
+  {
+   "kind": "video",
+   "title": "Lighting for Beginners! (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=aafyp5g1CjI",
+   "note": "Watch 35:44-43:57, the three-point lighting setup. Skip 21:59 'Bake Eevee Lighting' (old EEVEE; not needed in 4.2+)."
+  }
+ ],
+ "Tue Jan 5": [
+  {
+   "kind": "manual",
+   "title": "Inset Faces",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/face/inset_faces.html",
+   "note": "Inset the puddle outline in D01, then lower the inner faces slightly. Keep the border verts shared so the insert sits flush."
+  },
+  {
+   "kind": "manual",
+   "title": "Shrinkwrap Modifier",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/shrinkwrap.html",
+   "note": "Snap a separate puddle insert to the D01 surface so its edges match exactly."
+  },
+  {
+   "kind": "article",
+   "title": "Blender Tutorial: Photorealistic Puddles",
+   "creator": "Blender Guru (Andrew Price)",
+   "url": "https://www.blenderguru.com/tutorials/blender-tutorial-photorealistic-puddles",
+   "note": "Mar 2023. The wet-surface look (roughness and darkening masks, a flat water layer); use it for the shading half of the lesson."
+  }
+ ],
+ "Sat Jan 9": [
+  {
+   "kind": "manual",
+   "title": "Clean Up",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/cleanup.html",
+   "note": "Delete Loose, Degenerate Dissolve, Fill Holes. Merge by Distance is in the Merge page."
+  },
+  {
+   "kind": "manual",
+   "title": "Merge",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/merge.html",
+   "note": "Merge by Distance (M > By Distance)."
+  },
+  {
+   "kind": "manual",
+   "title": "Editing Normals",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html",
+   "note": "Recalculate Outside (Shift+N)."
+  },
+  {
+   "kind": "manual",
+   "title": "Select All by Trait",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/selecting/all_by_trait.html",
+   "note": "Select > Select All by Trait > Non Manifold / Loose Geometry / Interior Faces."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Tutorial - How to Merge By Distance, Clean Up Your Mesh",
+   "creator": "GRAPHICUE",
+   "url": "https://www.youtube.com/watch?v=XKUnvgkCwqY",
+   "note": "Short Oct 2024 demo of Merge by Distance."
+  },
+  {
+   "kind": "video",
+   "title": "Healing Non-Manifold Objects with Blender",
+   "creator": "GridSpace",
+   "url": "https://www.youtube.com/watch?v=2-11OwgRqmE",
+   "note": "Finding and fixing non-manifold edges (made for 3D printing, but the method is the same; 2021)."
+  }
+ ],
+ "Mon Jan 11": [
+  {
+   "kind": "manual",
+   "title": "Light Objects",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/light_object.html",
+   "note": "Sun: Strength in W/m² and Angle (shadow softness); Temperature (blackbody Kelvin) for warm/cool light."
+  },
+  {
+   "kind": "manual",
+   "title": "Sky Texture Node",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html",
+   "note": "Physical sky to pair with the sun, the closest match to UE5 Sky Atmosphere."
+  },
+  {
+   "kind": "manual",
+   "title": "Displays and Views",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/color_management/displays_views.html",
+   "note": "Exposure (stops) and the AgX view."
+  },
+  {
+   "kind": "video",
+   "title": "Lighting for Beginners! (Blender Tutorial)",
+   "creator": "Ryan King Art",
+   "url": "https://www.youtube.com/watch?v=aafyp5g1CjI",
+   "note": "Watch 6:32-8:21 (sun light) and 24:54-27:57 (world, Sky Texture)."
+  },
+  {
+   "kind": "ue5",
+   "title": "Sky Atmosphere Component in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/sky-atmosphere-component-in-unreal-engine",
+   "note": "The UE5 side of sun and sky."
+  },
+  {
+   "kind": "ue5",
+   "title": "Auto Exposure in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/auto-exposure-in-unreal-engine",
+   "note": "Lock exposure (Manual) so the UE5 values match your Blender study."
+  }
+ ],
+ "Tue Jan 12": [
+  {
+   "kind": "manual",
+   "title": "Volumes (EEVEE render settings)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/volumes.html",
+   "note": "Render > Volumes: Resolution, Steps, Distribution, Max Depth, Custom Range (use with a World volume to cut noise)."
+  },
+  {
+   "kind": "manual",
+   "title": "Light Settings (EEVEE)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/eevee/light_settings.html",
+   "note": "Light > Influence > Volume Scatter multiplier; Jitter is for soft surface shadows and is not needed for shafts."
+  },
+  {
+   "kind": "manual",
+   "title": "Sampling (EEVEE)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/sampling.html",
+   "note": "Render > Sampling > Shadows > Volumetric Shadows (+ Steps): needed for the shaft occlusion."
+  },
+  {
+   "kind": "manual",
+   "title": "Principled Volume",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/volume_principled.html",
+   "note": "Plug into World > Volume (low density) or into a box volume at the far opening."
+  },
+  {
+   "kind": "video",
+   "title": "How to Create Volumetric Lighting in Blender (Eevee & Cycles)",
+   "creator": "Shift4cube",
+   "url": "https://www.youtube.com/watch?v=EC72KRv7w0M",
+   "note": "Dec 2024, so it covers EEVEE Next (4.2+) volumetrics."
+  },
+  {
+   "kind": "ue5",
+   "title": "Volumetric Fog in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/volumetric-fog-in-unreal-engine",
+   "note": "Exponential Height Fog > Volumetric Fog; light shafts from a light's Volumetric Scattering Intensity."
+  }
+ ],
+ "Fri Jan 15": [
+  {
+   "kind": "manual",
+   "title": "Color Management",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/color_management/index.html",
+   "note": "Overview and color spaces."
+  },
+  {
+   "kind": "manual",
+   "title": "Displays and Views",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/color_management/displays_views.html",
+   "note": "View transforms: AgX (default), Khronos PBR Neutral, False Color (exposure heat map); Look, Exposure, Gamma."
+  },
+  {
+   "kind": "manual",
+   "title": "RGB to BW Node",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/compositing/types/color/rgb_to_bw.html",
+   "note": "For a value-only render, put this compositor node (now under Color nodes) before the Group Output. For a quick exposure check, use the False Color view transform."
+  },
+  {
+   "kind": "article",
+   "title": "Color Management (Blender Fundamentals 4.5 LTS)",
+   "creator": "Blender Studio (Beau Gerbrands)",
+   "url": "https://studio.blender.org/training/blender-fundamentals-45-lts/blender_4-5_lts_color-management/",
+   "note": "Free official lesson; watch it all."
+  },
+  {
+   "kind": "article",
+   "title": "The Secret to Rendering Vibrant Colors with AgX in Blender is the Raw Workflow",
+   "creator": "CG Cookie (Jonathan Lampel)",
+   "url": "https://blog.cgcookie.com/posts/the-secret-to-rendering-vibrant-colors-with-agx-in-blender-is-the-raw-workflow/",
+   "note": "Optional deeper read on AgX and grading (Apr 2024)."
+  }
+ ],
+ "Sat Jan 16": [
+  {
+   "kind": "manual",
+   "title": "World Environment",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/lights/world.html",
+   "note": "Swap the world per mood."
+  },
+  {
+   "kind": "manual",
+   "title": "Sky Texture Node",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html",
+   "note": "Sun elevation/rotation for morning vs overcast; night = low sky strength plus practical lights."
+  },
+  {
+   "kind": "video",
+   "title": "Lighting The Same Scene For Day AND Night",
+   "creator": "Brady Bessette",
+   "url": "https://www.youtube.com/watch?v=EY7GiRDDt3E",
+   "note": "Exactly the drill: one scene, several moods (2022)."
+  },
+  {
+   "kind": "video",
+   "title": "3 Easy Lighting Setups | Blender Tutorial",
+   "creator": "Max Hay",
+   "url": "https://www.youtube.com/watch?v=FYJb10NIMH8",
+   "note": "Optional; Nov 2025."
+  }
+ ],
+ "Sun Jan 17": [
+  {
+   "kind": "ue5",
+   "title": "Lumen Global Illumination and Reflections in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine",
+   "note": "Why UE5 bounce light differs from EEVEE; read before comparing renders."
+  },
+  {
+   "kind": "ue5",
+   "title": "Auto Exposure in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/auto-exposure-in-unreal-engine",
+   "note": "Match exposure before judging values side by side."
+  }
+ ],
+ "Mon Jan 18": [
+  {
+   "kind": "manual",
+   "title": "Object Origin",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/scene_layout/object/origin.html",
+   "note": "Keep pivots identical (bottom-left-back) when fixing meshes."
+  },
+  {
+   "kind": "manual",
+   "title": "FBX (Legacy)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/files/import_export/fbx_legacy.html",
+   "note": "Re-export with the same object name and settings so UE5 reimports onto the same asset."
+  },
+  {
+   "kind": "ue5",
+   "title": "FBX Static Mesh Pipeline in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine",
+   "note": "Static mesh import/reimport rules."
+  },
+  {
+   "kind": "ue5",
+   "title": "Reimporting Assets Automatically in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/reimporting-assets-automatically-in-unreal-engine",
+   "note": "Editor Preferences > Loading & Saving > Auto Reimport > Monitor Content Directories. Manual route: right-click asset > Reimport."
+  },
+  {
+   "kind": "video",
+   "title": "Blender to Unreal Engine 5 Via FBX - Keep Your Pivot Points Intact",
+   "creator": "Miguel De Andrade",
+   "url": "https://www.youtube.com/watch?v=MCQov3lhCpA",
+   "note": "Jul 2024; pivot handling so reimports don't shift placed actors."
+  }
+ ],
+ "Tue Jan 19": [
+  {
+   "kind": "manual",
+   "title": "Decimate Modifier",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/decimate.html",
+   "note": "Collapse ratio about 0.5 for LOD1 and 0.25 for LOD2; apply on copies."
+  },
+  {
+   "kind": "ue5",
+   "title": "Importing Static Mesh LODs Using FBX",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/importing-static-mesh-lods-using-fbx-in-unreal-engine",
+   "note": "LOD Group in the FBX, then Import Options > Mesh > Advanced > Import LODs."
+  },
+  {
+   "kind": "ue5",
+   "title": "Creating and Using LODs in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/creating-and-using-lods-in-unreal-engine",
+   "note": "Static Mesh Editor > Details > LOD Settings > LOD Import > 'Import LOD Level 1' (Reimport LOD Level N to replace)."
+  },
+  {
+   "kind": "video",
+   "title": "Export LODs from Blender to UE5",
+   "creator": "CG Krab",
+   "url": "https://www.youtube.com/watch?v=wlVCpgjLE2M",
+   "note": "Jul 2023; the Blender-side LOD setup for UE5."
+  }
+ ],
+ "Fri Jan 22": [
+  {
+   "kind": "manual",
+   "title": "Convex Hull",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/convex_hull.html",
+   "note": "Build UCX_ pieces from a duplicate of the mesh; split concave shapes into several hulls."
+  },
+  {
+   "kind": "ue5",
+   "title": "FBX Static Mesh Pipeline in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-static-mesh-pipeline-in-unreal-engine",
+   "note": "Collision section: UCX_/UBX_/UCP_/USP_ + [RenderMeshName]_##, same FBX, convex only, no overlaps."
+  },
+  {
+   "kind": "ue5",
+   "title": "Simple versus Complex Collision in Unreal Engine",
+   "creator": "Epic Games (UE 5.8 docs)",
+   "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/simple-versus-complex-collision-in-unreal-engine",
+   "note": "Collision Complexity options: when to use simple vs complex-as-simple."
+  },
+  {
+   "kind": "video",
+   "title": "Blender to Unreal: Custom Collision for UE5 (E02)",
+   "creator": "CG Krab",
+   "url": "https://www.youtube.com/watch?v=BIPe8SBKyUs",
+   "note": "About 15 min. 9:10 proxy mesh, 10:42 naming, 12:15 export/import, 14:10 UE settings."
+  }
+ ],
+ "Sat Jan 23": [
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Statistics overlay for triangle counts."
+  },
+  {
+   "kind": "manual",
+   "title": "Text Objects: Introduction",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/modeling/texts/introduction.html",
+   "note": "Text labels for the kit grid."
+  },
+  {
+   "kind": "manual",
+   "title": "Measure",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/toolbar/measure.html",
+   "note": "Dimension lines on the kit sheet."
+  },
+  {
+   "kind": "article",
+   "title": "Texel Density Checker (extension)",
+   "creator": "IvanVostrikov / extensions.blender.org",
+   "url": "https://extensions.blender.org/add-ons/texel-density-checker/",
+   "note": "Supports 4.2+, v2026.1.1 (Jul 2026). Install from Get Extensions."
+  },
+  {
+   "kind": "video",
+   "title": "Understanding Texel Density for Environments & Props",
+   "creator": "Hugh Chew",
+   "url": "https://www.youtube.com/watch?v=vehIyWKOa1o",
+   "note": "Jan 2026. Watch 0:39-19:28 (theory, real-world reference, checking it in UE5); the 19:29+ demo is in Maya."
+  }
+ ],
+ "Sun Jan 24": [
+  {
+   "kind": "manual",
+   "title": "Measure",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/toolbar/measure.html",
+   "note": "Check the dimensions on the kit sheet."
+  },
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Statistics for the final tri counts."
+  }
+ ],
+ "Mon Jan 25": [
+  {
+   "kind": "manual",
+   "title": "Viewport Overlays",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/overlays.html",
+   "note": "Wireframe overlay (opacity/threshold) for the wire passes."
+  },
+  {
+   "kind": "manual",
+   "title": "Viewport Shading",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+   "note": "Solid mode Lighting: Studio / MatCap for the clay passes; Texture color for UV-checker views (Image > New > Generated Type: UV Grid)."
+  },
+  {
+   "kind": "manual",
+   "title": "Lighting (Workbench)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/workbench/lighting.html",
+   "note": "Render the clay pass with the Workbench engine."
+  },
+  {
+   "kind": "video",
+   "title": "Create Perfect Clay, Wireframe & Viewport Renders in Blender",
+   "creator": "Bhagath Goud",
+   "url": "https://www.youtube.com/watch?v=n4GlLATBRRs",
+   "note": "2:42 clay, 4:06 wireframe; 0:35 viewport render (2022, same menus in 5.x)."
+  }
+ ],
+ "Tue Jan 26": [
+  {
+   "kind": "manual",
+   "title": "Viewport Shading",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/editors/3dview/display/shading.html",
+   "note": "Solid > Color: Material / Object / Random / Attribute. Set Material viewport colors (trim = one colour, unique = another)."
+  },
+  {
+   "kind": "manual",
+   "title": "Object Color (Workbench)",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/workbench/color.html",
+   "note": "The same color modes for a final Workbench render."
+  },
+  {
+   "kind": "video",
+   "title": "Change Material's Viewport Display Color in BLENDER 3D",
+   "creator": "Brandon 3D",
+   "url": "https://www.youtube.com/watch?v=VFJjB2ixkhc",
+   "note": "Jan 2024; how to set the per-material colour the overlay uses."
+  }
+ ],
+ "Fri Jan 29": [
+  {
+   "kind": "manual",
+   "title": "Track To Constraint",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/animation/constraints/tracking/track_to.html",
+   "note": "Aim the camera at an Empty on the skybridge."
+  },
+  {
+   "kind": "manual",
+   "title": "Follow Path Constraint",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/animation/constraints/relationship/follow_path.html",
+   "note": "Camera on a Bezier circle; animate the offset or the path duration for 10 s (240 frames at 24 fps)."
+  },
+  {
+   "kind": "video",
+   "title": "Blender Tutorial - How to Make a 360 Turntable Animation",
+   "creator": "Eve Sculpts",
+   "url": "https://www.youtube.com/watch?v=NZSkJ83ppow",
+   "note": "6:16, watch all (2021; constraints unchanged)."
+  },
+  {
+   "kind": "marmoset",
+   "title": "Turntable Animation",
+   "creator": "Marmoset Toolbag Documentation",
+   "url": "https://docs.marmoset.co/docs/turntable-animation/",
+   "note": "The main route: Scene > Add Object > Turntable, then parent the mesh or the camera."
+  }
+ ],
+ "Sat Jan 30": [
+  {
+   "kind": "manual",
+   "title": "Transitions",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/video_editing/edit/montage/strips/transitions/index.html",
+   "note": "Select two overlapping strips > Add > Transition; the overlap length sets the duration."
+  },
+  {
+   "kind": "manual",
+   "title": "Cross Strip",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/video_editing/edit/montage/strips/transitions/cross.html",
+   "note": "The crossfade; Default Fade or keyframed Effect Fader."
+  },
+  {
+   "kind": "manual",
+   "title": "Text Strip",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/video_editing/edit/montage/strips/text.html",
+   "note": "Titles."
+  },
+  {
+   "kind": "manual",
+   "title": "Output",
+   "creator": "Blender Manual 5.2",
+   "url": "https://docs.blender.org/manual/en/latest/render/output/properties/output.html",
+   "note": "Output Properties > Output: Media Type = Video; Encoding panel: Container MPEG-4, Video Codec H.264, Output Quality/CRF; Audio subsection."
+  },
+  {
+   "kind": "video",
+   "title": "A Beginner's Guide to Video Editing in the new Blender 5.0",
+   "creator": "Michael Chu",
+   "url": "https://www.youtube.com/watch?v=Q2_1GeVUci0",
+   "note": "1:22:15 total (Nov 2025). Watch 6:26-35:37 (adding media, splitting, moving), 35:37 Transitions, 1:02:40 Exporting."
+  }
+ ],
+ "Sun Jan 31": [
+  {
+   "kind": "article",
+   "title": "Presenting an Unreal Engine Environment Art Scene - from a Producer!",
+   "creator": "CGHero",
+   "url": "https://cghero.com/articles/presenting-unreal-engine-art-scene",
+   "note": "Jun 2022: thumbnail, hero shot, extra renders, short flythrough, modular kit, material and process breakdowns."
+  },
+  {
+   "kind": "article",
+   "title": "Building Victorian Street of Epic Proportions in UE4",
+   "creator": "80 Level (Richard Vinci)",
+   "url": "https://80.lv/articles/building-victorian-street-of-epic-proportions-in-ue4/",
+   "note": "A model written breakdown on a matching subject: Introduction, Meshes, Materials, Scale, Lighting, Challenges."
+  },
+  {
+   "kind": "article",
+   "title": "Tips On How To Make Your Portfolio Better",
+   "creator": "80 Level (Ellie Harisova)",
+   "url": "https://80.lv/articles/tips-on-how-to-make-your-portfolio-better",
+   "note": "Tip 4: break the environment down from macro to micro after the beauty shot."
+  }
+ ]
+}
